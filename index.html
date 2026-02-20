@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homely Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Homely Hub - Room Booking</h1>
+
+        <!-- Booking Form -->
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="location">Location:</label>
+            <select id="location" required>
+                <option value="" disabled selected>Select location</option>
+            </select>
+
+            <label for="members">Number of Members:</label>
+            <input type="number" id="members" placeholder="Number of members" required>
+
+            <label for="budget">Room Budget (per night in ₹):</label>
+            <input type="number" id="budget" placeholder="Enter your budget" required>
+
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" placeholder="Enter number of days" required>
+
+            <button type="submit">Find Hotels</button>
+        </form>
+
+        <h2>Available Hotels:</h2>
+        <div id="hotelsContainer" class="hotels-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

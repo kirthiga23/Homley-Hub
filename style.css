@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('Homely Hub.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hotels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hotel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.hotel-card:hover {
+    transform: scale(1.03);
+}
+
+.hotel-card img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hotel-info h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.hotel-info p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.hotel-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hotel-info a:hover {
+    text-decoration: underline;
+}
